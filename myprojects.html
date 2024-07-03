@@ -1,0 +1,253 @@
+<!-- 
+  Template: https://github.com/nisarhassan12/portfolio-template/
+  Website: https://nisar.dev
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    My Projects | Elis Moyle
+  </title>
+
+  <meta name="description" content="Details on all of the projects I've worked on'">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a href="https://KrazySnakpod.github.io/Portfolio/" target="_blank" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="https://KrazySnakpod.github.io/Portfolio/myprojects.html" target="_blank" class="nav__link">My Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="https://KrazySnakpod.github.io/Portfolio/aboutme.html" target="_blank" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="https://KrazySnakpod.github.io/Portfolio/contact.html" target="_blank" class="nav__link">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>My Projects</span>
+        </h1>
+        <p>A list of all the projects I've worked on, from Game Jam submissions to University projects, as well as personal projects that I'm still working on.</p>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Game Jam submissions ***** -->
+    <section class="Game Jam submissions" id="gamejam">
+      <div class="row">
+        <h2>Game Jam submissions</h2>
+        <div class="work__boxes">
+
+          <!-- CLOWNERY -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Clownery</h3>
+              <p>
+                Created during the Global Game Jam 2024 with the theme of "Make Me Laugh", <i>Clownery</i> is a multiplayer game with two main phases - a daytime phase, where the players perform on stage and use skills to gather money, and a nighttime phase, where players must stealthily break into a series of secured areas and steal as much as possible, using their money to purchase useful tools to simplify the process.
+              </p>
+              <ul class="work__list">
+                <li>Created in Unity</li>
+                <li>Written in C#</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://KrazySnakpod.github.io/Portfolio/projects/clownery.html" target="_blank" class="link__text">
+                  Learn More <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/clownery.png" class="work__image" alt="Clownery title screen" />
+            </div>
+          </div>
+
+          <!-- THE TRAVELLER -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>The Traveller</h3>
+              <p>
+                Created during the Ryan Laley Games Summer Jam 2023 with the theme of "Contrast", <i>The Traveller</i> is a short game in which you play as a time-hopping traveller attempting to breach the castle. The traveller cannot attack, and as such must utilize their time-hopping abilities to manoeuvre past any enemies they encounter.
+              </p>
+              <ul class="work__list">
+                <li>Created in UE5</li>
+                <li>Written in Blueprint</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://KrazySnakpod.github.io/Portfolio/projects/thetraveller.html" class="link__text">
+                  Learn More <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/thetraveller.png" class="work__image" alt="The Traveller title" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** University projects ***** -->
+    <section class="University Projects" id="university">
+      <div class="row">
+        <h2>University projects</h2>
+        <div class="work__boxes">
+          <!-- SURVIVAL HORROR AI -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Survival Horror AI</h3>
+              <p>
+                A short demo created as part of my dissertation project, utilizing a GOAP system and the A* pathfinding algorithm to determine a course of events for each enemy. The player navigates a dark area while the enemies navigate the area, responding to sight and audio cues.
+              </p>
+              <ul class="work__list">
+                <li>Created in UE5</li>
+                <li>Written in Blueprint & C++</li>
+              </ul>
+
+              <div class="work__links">
+                <!-- LINK TO PAGE -->
+                <a href="https://KrazySnakpod.github.io/Portfolio/projects/survivalhorrorai.html" target="_blank" class="link__text">
+                  Learn More <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <!-- CHANGE THIS -->>
+            <div class="work__image-box">
+              <img src="./images/survivalhorrorai.png" class="work__image" alt="Screenshot from the Survival Horror AI demo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Personal projects ***** -->
+  <section class="Personal projects" id="personal">
+    <div class="row">
+      <h2>Personal projects</h2>
+        <div class="work__boxes">
+          <!-- UNTITLED JRPG -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Unfinished Turn-Based RPG</h3>
+              <p>
+                Inspired by numerous turn-based RPG games, I wanted to find out how the combat system in these games could be implemented. The player is able to use a basic attack, use skills costing HP or MP, and inflict status ailments that deal damage over time. Each entity has their own stat table, determining stats such as health, physical attack and speed dependent on their current level. This project started in Summer 2023 as my first Unreal Engine project.
+              </p>
+              <ul class="work__list">
+                <li>Created in UE5</li>
+                <li>Written in Blueprint</li>
+              </ul>
+
+              <div class="work__links">
+                <!-- LINK TO PAGE -->
+                <a href="https://KrazySnakpod.github.io/Portfolio/projects/survivalhorrorai.html" target="_blank" class="link__text">
+                  Learn More <span>&rarr;</span>
+                </a> 
+              </div>
+            </div>
+            <!-- CHANGE THIS -->>
+            <div class="work__image-box">
+              <video controls width="750">
+                <source src="./videos/turnbasedrpg.mp4" type="video/mp4"/>
+              </video>
+            </div>
+          </div>
+
+          <!-- UNTITLED ARPG -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Unfinished Action RPG</h3>
+              <p>
+                Drawing inspiration from games from the <i>Kingdom Hearts</i> franchise, I wanted to try to implement an ARPG combat system using Unreal Engine. This project was started in June 2024, and as such is very early in development, with the player only able to navigate the menu and target enemies.
+              </p>
+              <ul class="work__list">
+                <li>Created in UE5</li>
+                <li>Written in Blueprint</li>
+              </ul>
+
+              <div class="work__links">
+                <!-- LINK TO PAGE -->
+                <a href="https://KrazySnakpod.github.io/Portfolio/projects/survivalhorrorai.html" target="_blank" class="link__text">
+                  Learn More <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <!-- CHANGE THIS -->>
+            <div class="work__image-box">
+              <video controls width="750">
+                <source src="./videos/actionrpg.mp4" type="video/mp4"/>
+              </video>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Github, Itch, LinkedIn -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/KrazySnakpod" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://krayzysnakpod.itch.io/" title="Link to Itch.io Profile">
+            <!-- CHANGE THIS -->
+            <img src="./images/itch-io.svg" class="footer__social-image" alt="Itch.io">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/elis-moyle-1417a4310/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <p>
+        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+      </p>
+      <div class="footer__github-buttons">
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
+          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
+        </iframe>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>

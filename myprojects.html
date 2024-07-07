@@ -30,16 +30,16 @@
       <nav class="nav" role="navigation">
         <ul class="nav__items">
           <li class="nav__item">
-            <a href="https://KrazySnakpod.github.io/Portfolio/" target="_blank" class="nav__link">Home</a>
+            <a href="https://KrazySnakpod.github.io/Portfolio/" class="nav__link">Home</a>
           </li>
           <li class="nav__item">
-            <a href="https://KrazySnakpod.github.io/Portfolio/myprojects.html" target="_blank" class="nav__link">My Projects</a>
+            <a href="https://KrazySnakpod.github.io/Portfolio/myprojects.html" class="nav__link">My Projects</a>
           </li>
           <li class="nav__item">
-            <a href="https://KrazySnakpod.github.io/Portfolio/aboutme.html" target="_blank" class="nav__link">About Me</a>
+            <a href="https://KrazySnakpod.github.io/Portfolio/about.html" class="nav__link">About Me</a>
           </li>
           <li class="nav__item">
-            <a href="https://KrazySnakpod.github.io/Portfolio/contact.html" target="_blank" class="nav__link">Contact Me</a>
+            <a href="https://KrazySnakpod.github.io/Portfolio/contact.html" class="nav__link">Contact Me</a>
           </li>
         </ul>
       </nav>
@@ -73,12 +73,8 @@
                 <li>Created in Unity</li>
                 <li>Written in C#</li>
               </ul>
+              <a href="https://globalgamejam.org/games/2024/clownery-4" class="btn">Learn More</a>
 
-              <div class="work__links">
-                <a href="https://KrazySnakpod.github.io/Portfolio/projects/clownery.html" target="_blank" class="link__text">
-                  Learn More <span>&rarr;</span>
-                </a>
-              </div>
             </div>
             <div class="work__image-box">
               <img src="./images/clownery.png" class="work__image" alt="Clownery title screen" />
@@ -96,15 +92,61 @@
                 <li>Created in UE5</li>
                 <li>Written in Blueprint</li>
               </ul>
+              <a href="https://krayzysnakpod.itch.io/the-traveller" class="btn">Learn More</a>
 
-              <div class="work__links">
-                <a href="https://KrazySnakpod.github.io/Portfolio/projects/thetraveller.html" class="link__text">
-                  Learn More <span>&rarr;</span>
-                </a>
-              </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/thetraveller.png" class="work__image" alt="The Traveller title" />
+              <img src="./images/thetraveller.png" class="work__image" alt="The Traveller title" height="500" width="500"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- ***** Personal projects ***** -->
+    <section class="Personal projects" id="personal">
+      <div class="row">
+        <h2>Personal projects</h2>
+          <div class="work__boxes">
+            <!-- UNTITLED ARPG -->
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Unfinished Action RPG</h3>
+                <p>
+                  Drawing inspiration from games from the <i>Kingdom Hearts</i> franchise, I wanted to try to implement an ARPG combat system using Unreal Engine. This project was started in June 2024, and as such is very early in development, with the player only able to navigate the menu and target enemies.
+                </p>
+                <ul class="work__list">
+                  <li>Created in UE5</li>
+                  <li>Written in Blueprint</li>
+                </ul>
+
+              </div>
+              <!-- CHANGE THIS -->>
+              <div class="work__image-box">
+                <video controls width="750">
+                  <source src="./videos/actionrpg.mp4" type="video/mp4"/>
+                </video>
+              </div>
+            </div>
+
+          <!-- UNTITLED JRPG -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Unfinished Turn-Based RPG</h3>
+              <p>
+                Inspired by numerous turn-based RPG games, I wanted to find out how the combat system in these games could be implemented. The player is able to use a basic attack, use skills costing HP or MP, and inflict status ailments that deal damage over time. Each entity has their own stat table, determining stats such as health, physical attack and speed dependent on their current level. This project started in Summer 2023 as my first Unreal Engine project.
+              </p>
+              <ul class="work__list">
+                <li>Created in UE5</li>
+                <li>Written in Blueprint</li>
+              </ul>
+
+            </div>
+            <!-- CHANGE THIS -->>
+            <div class="work__image-box">
+              <video controls width="750">
+                <source src="./videos/turnbasedrpg.mp4" type="video/mp4"/>
+              </video>
             </div>
           </div>
         </div>
@@ -121,91 +163,190 @@
             <div class="work__text">
               <h3>Survival Horror AI</h3>
               <p>
-                A short demo created as part of my dissertation project, utilizing a GOAP system and the A* pathfinding algorithm to determine a course of events for each enemy. The player navigates a dark area while the enemies navigate the area, responding to sight and audio cues.
+                A short demo created as part of my dissertation project, utilizing a GOAP system and the A* pathfinding algorithm to determine a course of events for each enemy. The player navigates a dark area while the enemies navigate the area, responding to sight and audio cues. If the player is spotted, the enemy will begin to chase the player until either the player is defeated or the enemy loses a player, in which it will decide the next best course of action.
               </p>
               <ul class="work__list">
                 <li>Created in UE5</li>
                 <li>Written in Blueprint & C++</li>
               </ul>
 
-              <div class="work__links">
-                <!-- LINK TO PAGE -->
-                <a href="https://KrazySnakpod.github.io/Portfolio/projects/survivalhorrorai.html" target="_blank" class="link__text">
-                  Learn More <span>&rarr;</span>
-                </a>
-              </div>
             </div>
             <!-- CHANGE THIS -->>
             <div class="work__image-box">
               <img src="./images/survivalhorrorai.png" class="work__image" alt="Screenshot from the Survival Horror AI demo" />
             </div>
           </div>
+
+          <!-- VIRTUAL WORLDS -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Creating Virtual Worlds on the GPU</h3>
+              <p>
+                The task presented to us in this module was to implement one of a few different visual effects into a pre-existing codebase, as well as add functionality to the player character and importing our own assets. I chose to implement reflections and used the same idea to implement a camera system, in which the player could scroll through the different "security cameras" located around the map and view them on a screen.
+              </p>
+              <ul class="work__list">
+                <li>Written in C++</li>
+                <li>Utilizes OpenGL</li>
+              </ul>
+
+            </div>
+            <!-- CHANGE THIS -->>
+            <div class="work__image-box">
+              <video controls width="750">
+                <source src="./videos/virtualworlds.mp4" type="video/mp4"/>
+              </video>
+            </div>
+          </div>
+
+          <!-- ROB O'MANN -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Rob O'Mann</h3>
+              <p>
+                Rob O'Mann is a mobile game where the player takes on the role a robot who wants to learn more about humanity and learn how to become human, named Rob O'Mann. A stealth game, Rob must navigate past enemies stealthily and interact with the environment to gather intel. With enough intel, Rob can complete the level, where his grade is determined by how long the level took and whether he used any items or a disguise. This game was created as part of a team, and I was primarily responsible for the movement system and adapting it to work on mobile devices, among other things such as points and the camera.
+              </p>
+              <ul class="work__list">
+                <li>Created in Unity</li>
+                <li>Written in C#</li>
+                <li>Available on mobile devices</li>
+              </ul>
+
+            </div>
+            <!-- CHANGE THIS -->>
+            <div class="work__image-box">
+              <video controls width="750">
+                <source src="./videos/robomann.mp4" type="video/mp4"/>
+              </video>
+            </div>
+          </div>
+
+          <!-- VISUAL SIMULATION -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Visual Simulation</h3>
+              <p>
+                In the Visual Simulation module, our task was to create an interactive and engaging visualization of a set of data in virtual reality, with the ability for the data to be changed and reflected in the game. As a group, we decided that visualizing the data set using a series of roads in the style of the game <i>Crossy Road</i> would be effective for this task, with the number of cars on the roads representing the data. In this project, I was responsible for the items system, the VR setup and much of the main backend systems, such as the ability to dynamically change the world by changing just the data set.
+              </p>
+              <ul class="work__list">
+                <li>Created in Unity</li>
+                <li>Written in C#</li>
+                <li>Runs on virtual reality headsets</li>
+              </ul>
+
+            </div>
+            <!-- CHANGE THIS -->>
+            <div class="work__image-box">
+              <video controls width="750">
+                <source src="./videos/visualsimulation.mp4" type="video/mp4"/>
+              </video>
+            </div>
+          </div>
+
+          <!-- ASTEROIDS CLONE -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Multiplayer <i>Asteroids</i> clone</h3>
+              <p>
+                For this project, we were tasked with making a clone of the Atari game <i>Asteroids</i> which allowed for online multiplayer connectivity using a Server and multiple clients. The codebase originally provided to us contained libraries which enabled a UDP socket connection, however it was up to us to establish network connectivity for the objects. The final game is a near identical copy of <i>Asteroids</i>, with network functionality added enabling multiplayer, however the score is not currently tracked.
+              </p>
+              <ul class="work__list">
+                <li>Written in C++</li>
+                <li>Utilizes SDL2 & SDL2_image</li>
+                <li>Requires a running Server instance</li>
+              </ul>
+
+            </div>
+            <!-- CHANGE THIS -->>
+            <div class="work__image-box">
+              <img src="./images/asteroidsclone.png" class="work__image" alt="Screenshot from the Asteroids Clone" />
+            </div>
+          </div>
+
+          <!-- GAME ENGINE DEVELOPMENT -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Game Engine Development</h3>
+              <p>
+                The task for this module was to identify the components of a game engine, and to use a combination to create a simplistic clone of the game <i>Forsaken</i>. The project created for this module is not a complete game, however it does demonstrate some of the features of Ogre3D, featuring lighting, multiple cameras, and fog, and also demonstrates some functionality of Bullet, featuring collisions, both using simple objects and meshes to define a collision zone. Finally, there is a small amount of AI functionality.
+              </p>
+              <ul class="work__list">
+                <li>Written in C++</li>
+                <li>Utilizes Ogre3D for rendering & Bullet for physics</li>
+              </ul>
+
+            </div>
+            <!-- CHANGE THIS -->>
+            <div class="work__image-box">
+              <video controls width="750">
+                <source src="./videos/gameenginedev.mp4" type="video/mp4"/>
+              </video>
+            </div>
+          </div>
+
+          <!-- LEVEL DESIGN & GAME ASSETS -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Level Design & Game Assets</h3>
+              <p>
+                One of the more creative modules, this module served as an introduction to the process of creating assets for games, and how they could be used in a full game. We were tasked with creating a number of assets using 3ds Max, which could then be brought into a Unity project and given functionality. I decided on a more aquatic theme for my assets, creating a cuttlefish which I would use as my player character, a crab to act as an enemy, and a ruined pirate ship for the stage.
+              </p>
+              <ul class="work__list">
+                <li>Assets created in 3ds Max</li>
+                <li>Implemented in Unity</li>
+              </ul>
+
+            </div>
+            <!-- CHANGE THIS -->>
+            <div class="work__image-box">
+              <video controls width="750">
+                <source src="./videos/gameassets.mp4" type="video/mp4"/>
+              </video>
+            </div>
+          </div>
+
+          <!-- NAVIGATING VIRTUAL WORLDS -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3><i>The Sentinel</i> clone</h3>
+              <p>
+                In this module, we were required to create a virtual reality clone of the old ZX Spectrum game <i>The Sentinel</i> as part of a team. Our first introduction to working in virtual reality, I was responsible for the VR setup of the project, including 3D movement, teleportation, and interaction, as well as basic gameplay systems such as player statistics.
+              </p>
+              <ul class="work__list">
+                <li>Created in Unity</li>
+                <li>Written in C#</li>
+                <li>Runs on virtual reality headsets</li>
+              </ul>
+
+            </div>
+            <!-- CHANGE THIS -->>
+            <div class="work__image-box">
+              <img src="./images/navigatingvirtualworlds.png" class="work__image" alt="Screenshot from the Asteroids Clone" />
+            </div>
+          </div>
+
+          <!-- REAL-TIME GRAPHICS -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Real-Time Graphics</h3>
+              <p>
+                Utilizing OpenGL and its shader system, we were required to create a basic project which could render 3D objects specified in a .sdf file to create a scene. We were also required to implement systems for texture mapping, lighting and transparency, as well as basic movement functionality for the player.
+              </p>
+              <ul class="work__list">
+                <li>Written in C++</li>
+                <li>Utilizes OpenGL</li>
+              </ul>
+
+            </div>
+            <!-- CHANGE THIS -->>
+            <div class="work__image-box">
+              <img src="./images/realtimegraphics.png" class="work__image" alt="Screenshot from the Asteroids Clone" />
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
   </main>
-
-  <!-- ***** Personal projects ***** -->
-  <section class="Personal projects" id="personal">
-    <div class="row">
-      <h2>Personal projects</h2>
-        <div class="work__boxes">
-          <!-- UNTITLED JRPG -->
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Unfinished Turn-Based RPG</h3>
-              <p>
-                Inspired by numerous turn-based RPG games, I wanted to find out how the combat system in these games could be implemented. The player is able to use a basic attack, use skills costing HP or MP, and inflict status ailments that deal damage over time. Each entity has their own stat table, determining stats such as health, physical attack and speed dependent on their current level. This project started in Summer 2023 as my first Unreal Engine project.
-              </p>
-              <ul class="work__list">
-                <li>Created in UE5</li>
-                <li>Written in Blueprint</li>
-              </ul>
-
-              <div class="work__links">
-                <!-- LINK TO PAGE -->
-                <a href="https://KrazySnakpod.github.io/Portfolio/projects/survivalhorrorai.html" target="_blank" class="link__text">
-                  Learn More <span>&rarr;</span>
-                </a> 
-              </div>
-            </div>
-            <!-- CHANGE THIS -->>
-            <div class="work__image-box">
-              <video controls width="750">
-                <source src="./videos/turnbasedrpg.mp4" type="video/mp4"/>
-              </video>
-            </div>
-          </div>
-
-          <!-- UNTITLED ARPG -->
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Unfinished Action RPG</h3>
-              <p>
-                Drawing inspiration from games from the <i>Kingdom Hearts</i> franchise, I wanted to try to implement an ARPG combat system using Unreal Engine. This project was started in June 2024, and as such is very early in development, with the player only able to navigate the menu and target enemies.
-              </p>
-              <ul class="work__list">
-                <li>Created in UE5</li>
-                <li>Written in Blueprint</li>
-              </ul>
-
-              <div class="work__links">
-                <!-- LINK TO PAGE -->
-                <a href="https://KrazySnakpod.github.io/Portfolio/projects/survivalhorrorai.html" target="_blank" class="link__text">
-                  Learn More <span>&rarr;</span>
-                </a>
-              </div>
-            </div>
-            <!-- CHANGE THIS -->>
-            <div class="work__image-box">
-              <video controls width="750">
-                <source src="./videos/actionrpg.mp4" type="video/mp4"/>
-              </video>
-            </div>
-          </div>
-        </div>
-    </div>
-  </section>
 
   <!-- ***** Footer ***** -->
 
